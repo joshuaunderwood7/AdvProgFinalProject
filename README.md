@@ -199,32 +199,62 @@ classes:
 user story:
 
 main calls game.
+
 game greets user.
+
 game creates gameboard:
+
 	gameboard creates locations,
+
 		locations are created with monsters:
+
 			monsters create weapon and contain weapon.
+
 			monsters create tresure and contain the tresure.
+
 		locations create hero:
+
 			hero creates weapon and contain weapon.
+
 (Game LOOP):
+
 game locates hero:
+
 	game displays location info.
+
 	game marks location as visited.
+
 	if location has a monster:
+
 		then game initiates battle.
+
 			if hero wins:
+
 				tresure is copied from monster and added to hero tresure list.
+
 				monster is removed from location.
+
 			else GAMEOVER.
+
 	if every location has been visited: 
+
 		then GAMEOVER.
+
 	game displays adjacent locations.
+
 	game PAUSES and waits for user to press enter.
+
 	game chooses adjacent location, and moves hero to that location
+
 	game displays tresure collected and hit points remaining.
+
 (repeat game loop)
+
 game displays tresure collected and hit points remaining.
+
 (GAMEOVER)
+
 if player is alive: then display a congratulation message
+
 if player is dead: then display a failure message
+
