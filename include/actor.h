@@ -12,9 +12,12 @@ class actor : public item
         actor();
         virtual ~actor();
 
+        //PRE:(none)
+        //POST: returns hit_points
         unsigned int getHitPoints();
 
-        //reduces hit points by damage, if damage greater than hit_points
+        //PRE:unsigned input "damage"
+        //POST: reduces hit points by damage, if damage greater than hit_points
         //hit_points is reduced to 0.
         //returns false if hit_points is equal to 0.
         //returns true otherwise.

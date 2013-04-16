@@ -12,6 +12,8 @@ class tresure : public prop
         tresure(unsigned int amount);
         virtual ~tresure();
 
+        //PRE: tresure constructed.
+        //POST: returns tresure_value.
         unsigned int getValue();
 
     protected:

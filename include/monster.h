@@ -11,6 +11,8 @@ class monster : public actor
         monster();
         virtual ~monster();
 
+        //PRE: monster constructed.
+        //POST: returns tresure_held.
         tresure getTresure();
 
     protected:

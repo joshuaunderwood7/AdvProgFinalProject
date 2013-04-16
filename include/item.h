@@ -6,11 +6,14 @@
 class item
 {
     public:
+        //type used to runtime typecheck items in location.h
         std::string type;
 
         item();
         virtual ~item();
 
+        //PRE: item constructed.
+        //POST: returns name.
         std::string getName();
 
     protected:

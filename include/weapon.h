@@ -17,7 +17,11 @@ class weapon : public prop
         weapon(typeOf weaponType);
         virtual ~weapon();
 
+        //PRE: weapon constructed.
+        //POST: returns hit_probability.
         unsigned int getHitPercent();
+        //PRE: weapon constructed.
+        //POST: returns hit_value.
         unsigned int getDamage();
 
     protected:

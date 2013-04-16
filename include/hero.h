@@ -12,7 +12,11 @@ class hero : public actor
         hero();
         virtual ~hero();
 
+        //PRE: hero constructed.
+        //POST: adds input tresure to tresure_collected
         bool addTresure(tresure);
+        //PRE: hero constructed.
+        //POST: returns tresure_collected.
         std::list<tresure>& getTresure();
 
     protected:
