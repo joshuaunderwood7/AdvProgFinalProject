@@ -1,7 +1,7 @@
-#include "location.h"
-#include "tresure.h"
-#include "monster.h"
-#include "hero.h"
+#include "../include/location.h"
+#include "../include/tresure.h"
+#include "../include/monster.h"
+#include "../include/hero.h"
 
 location::location()
 {

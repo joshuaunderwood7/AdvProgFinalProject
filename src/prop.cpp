@@ -1,4 +1,4 @@
-#include "prop.h"
+#include "../include/prop.h"
 
 prop::prop()
 {

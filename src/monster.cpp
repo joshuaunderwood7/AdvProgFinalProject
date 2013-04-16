@@ -1,6 +1,6 @@
-#include "monster.h"
-#include "weapon.h"
-#include "tresure.h"
+#include "../include/monster.h"
+#include "../include/weapon.h"
+#include "../include/tresure.h"
 #include <stdlib.h>
 #include <time.h>
 

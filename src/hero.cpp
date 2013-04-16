@@ -1,5 +1,5 @@
-#include "hero.h"
-#include "weapon.h"
+#include "../include/hero.h"
+#include "../include/weapon.h"
 
 hero::hero()
 {

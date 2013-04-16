@@ -1,8 +1,8 @@
-#include "gameboard.h"
-#include "location.h"
-#include "item.h"
-#include "monster.h"
-#include "hero.h"
+#include "../include/gameboard.h"
+#include "../include/location.h"
+#include "../include/item.h"
+#include "../include/monster.h"
+#include "../include/hero.h"
 #include <vector>
 #include <string>
 

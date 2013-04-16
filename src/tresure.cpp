@@ -1,4 +1,4 @@
-#include "tresure.h"
+#include "../include/tresure.h"
 
 tresure::tresure(unsigned int amount) : tresure_value(amount)
 {
