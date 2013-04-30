@@ -3,6 +3,7 @@
 tresure::tresure(unsigned int amount) : tresure_value(amount)
 {
     name = "a stack of gold coins";
+    type = "tresure";
 }
 
 tresure::tresure()
