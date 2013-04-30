@@ -5,6 +5,8 @@
 #include "../include/hero.h"
 #include <vector>
 #include <string>
+#include <stdlib.h>
+#include <time.h>
 
 /*location(std::string &l_name,
                  std::string &l_discription,
@@ -13,6 +15,9 @@
                  */
 gameboard::gameboard()
 {
+    srand(time(NULL)); // moved here to prevent exact copied of monsters in
+                       // each room.
+    
     std::vector<std::string> adjacent_locations;
     std::vector<item*> l_items;
 

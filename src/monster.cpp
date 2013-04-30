@@ -6,7 +6,7 @@
 
 monster::monster()
 {
-    srand(time(NULL));
+//    srand(time(NULL)); //moved to gameboard.cpp
     int rtype = rand() % 3;
     switch (rtype)
     {

@@ -2,6 +2,7 @@
 #include "../include/tresure.h"
 #include "../include/monster.h"
 #include "../include/hero.h"
+#include <algorithm>
 
 location::location()
 {
@@ -20,13 +21,7 @@ location::location(std::string l_name,
 
 location::~location()
 {
-    /*
-    std::vector<item*>::iterator iter;
-    for(iter = items.begin(); iter != items.end(); iter++)
-    {
-        delete *iter;
-    }
-    */
+//    remove_if(items.begin(), items.end(), deleteAll);
 }
 
 std::string location::getName() {return name;}
@@ -123,7 +118,9 @@ bool location::removeMonster()
     {
         if(items[i]->type == "monster")
         {
+            item* temp = items[i];
             items[i] = items[items.size()-1];
+            delete temp;
             items.pop_back();
             return true;
         }

@@ -70,6 +70,8 @@ class location
 
         bool visited;
 
+//        static bool deleteAll( item* theElement ) { delete theElement; return true; }
+
     private:
 };
 

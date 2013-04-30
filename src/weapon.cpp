@@ -5,7 +5,7 @@
 weapon::weapon(typeOf weaponType)
 {
     type = "weapon";
-    srand(time(NULL));
+//    srand(time(NULL)); //moved to gameboard.cpp
     int rweapon = rand() % 3;
     switch (weaponType)
     {
