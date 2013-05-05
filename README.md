@@ -7,6 +7,13 @@ CSCI 3320
 Project
 Spring 2013
 CASTLE ADVENTURE
+
+To Build:
+    run make.
+    program will be located in ./bin/
+    
+    may be executed with .bin/FinalProj
+
 OVERVIEW
 Your task is to design and write an adventure game for a new software company.
 It is a
